@@ -1,0 +1,23 @@
+## laravel-migration-seeder
+
+1. Creiamo una tabella trains e relativa Migration
+
+2. ## Ogni treno dovrà avere:
+
+-   Azienda
+-   Stazione di partenza
+-   Stazione di arrivo
+-   Orario di partenza
+-   Orario di arrivo
+-   Codice Treno
+-   Numero Carrozze
+-   In orario
+-   Cancellato
+
+---
+
+-   È probabile che siano necessarie altre colonne per far funzionare la tabella nel modo corretto
+
+3. Inserite inizialmente i dati tramite PhpMyAdmin.
+
+4. Create Model relativo ed un Controller per mostrare nella home page tutti i treni che sono in partenza dalla data odierna.
