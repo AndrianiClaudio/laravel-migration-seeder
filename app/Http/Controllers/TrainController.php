@@ -26,18 +26,32 @@ class TrainController extends Controller
 
     public function insertTrain()
     {
-        $data_9365 = [
-            'agency' => 'Trenitalia',
-            'departure_station' => 'Milano Centrale',
-            'arrival_station' => 'Roma Termini',
-            'departure_time' => '2022-02-18 17:40:00',
-            'arrival_time' => '2022-02-18 21:12:00',
-            'train_code' => '9365',
-            'carriages' => '8',
+        $data = [
+            [
+                'agency' => 'Trenitalia',
+                'departure_station' => 'Milano Centrale',
+                'arrival_station' => 'Roma Termini',
+                'departure_time' => '2022-02-18 17:40:00',
+                'arrival_time' => '2022-02-18 21:12:00',
+                'train_code' => '9365',
+                'carriages' => '8',
+            ],
+            [
+                'agency' => 'Trenitalia',
+                'departure_station' => 'Milano Centrale',
+                'arrival_station' => 'Napoli',
+                'departure_time' => '2022-02-18 13:40:00',
+                'arrival_time' => '2022-02-18 19:12:00',
+                'train_code' => '9315',
+                'carriages' => '3',
+            ]
         ];
-        $trains = new Train($data_9365);
-        $trains->fill($data_9365);
-        $trains->save();
+        foreach ($data as $train) {
+            # code...
+            $trains = new Train();
+            $trains->fill($train);
+            $trains->save();
+        }
         dd($trains);
     }
 }
