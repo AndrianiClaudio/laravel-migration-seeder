@@ -22,11 +22,11 @@ class CreateTrainsTable extends Migration
             // Stazione di arrivo
             $table->string('arrival_station', 80);
             // Orario di partenza
-            $table->time('departure_time');
+            $table->dateTime('departure_time');
             // Orario di arrivo
-            $table->time('arrival_time');
+            $table->dateTime('arrival_time');
             // Codice Treno
-            $table->string('train_code', 8);
+            $table->string('train_code', 4);
             // Numero Carrozze
             $table->string('carriages', 2);
             // In orario
