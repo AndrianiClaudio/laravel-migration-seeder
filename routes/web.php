@@ -15,5 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'TrainController@index')
     ->name('home');
-Route::get('/train', 'TrainController@insertTrain')
-    ->name('train');
+Route::get('/train/{train}', 'TrainController@show')
+    ->name('trains.show');
+// Route::get('/train', 'TrainController@insertTrain')
+//     ->name('train');

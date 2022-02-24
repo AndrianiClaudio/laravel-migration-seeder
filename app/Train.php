@@ -17,6 +17,8 @@ class Train extends Model
         'train_code',
         'carriages',
         'in_time',
-        'deleted'
+        'deleted',
+        'created_at',
+        'updated_at'
     ];
 }

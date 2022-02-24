@@ -14,6 +14,7 @@ Treni in partenza oggi
       {{$train->departure_station}} -> 
       {{$train->arrival_station}}
     </h2>
+    <h3 class="agency"><a href="#">{{$train->agency}}</a></h3>
     <div class="travel-time">
       <b>Partenza: </b><span>{{$train->departure_time}}</span>
       <b>Arrivo: </b><span>{{$train->arrival_time}}</span>

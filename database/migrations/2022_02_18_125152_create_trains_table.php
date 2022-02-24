@@ -30,9 +30,9 @@ class CreateTrainsTable extends Migration
             // Numero Carrozze
             $table->string('carriages', 2);
             // In orario
-            $table->tinyInteger('in_time')->nullable();
+            $table->tinyInteger('in_time');
             // Cancellato
-            $table->tinyInteger('deleted')->nullable();
+            $table->tinyInteger('deleted');
             // created_at & updated_at
             $table->timestamps();
         });
